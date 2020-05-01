@@ -1,0 +1,40 @@
+#uni_table{
+  width: 95%;
+  background: #fff;
+  padding: 30px;
+}
+
+#uni_table th{ 
+  width: 30%;
+}
+#uni_table th,td{ 
+  text-align: left;
+  vertical-align: middle;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#uni_table td input,textarea{
+  width: 100%;
+}
+
+.uni_add_field_elem{
+  margin: 0 20px;
+}
+
+.uni_add_field_url{
+  margin-right: 20px;
+}
+.uni_add_field_alt{
+  margin-left: 20px;
+}
+
+.btn{
+  text-align: center;
+  margin-top: 20px;
+}
+.btn input{
+  width: 300px;
+  padding: 10px!important;
+  display: inline-block;
+}
