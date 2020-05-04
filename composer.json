@@ -1,6 +1,7 @@
 {
   "name": "yamaotakuro/uni-easy-add-field",
   "type": "wordpress-plugin",
+  "homepage": "https://github.com/yamaotakuro/uni-easy-add-field",
   "authors": [
     {
       "name": "Takuro Yamao",
@@ -24,7 +25,7 @@
   },
   "autoload": {
     "psr-0": {
-      "Acme": "src/"
+      "Monolog": "src"
     }
   }
 }
