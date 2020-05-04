@@ -13,6 +13,16 @@
       "role": "Developer"
     }
   ],
+  "repositories":[
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    }
+  ],
   "require": {
     "php": ">=5.6.0"
   },
