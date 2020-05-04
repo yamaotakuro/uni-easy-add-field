@@ -4,7 +4,6 @@
   "description": "WP-plugin",
   "homepage": "https://github.com/yamaotakuro/uni-easy-add-field",
   "license": "MIT",
-  "minimum-stability": "stable",
   "authors": [
     {
       "name": "Takuro Yamao",
