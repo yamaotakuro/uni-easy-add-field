@@ -12,16 +12,6 @@
       "role": "Developer"
     }
   ],
-  "repositories":[
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
-      "type": "composer",
-      "url": "https://wp-languages.github.io"
-    }
-  ],
   "require": {
     "php": ">=5.6.0"
   },
@@ -29,5 +19,14 @@
     "psr-0": {
       "Monolog": "src"
     }
+  },
+  "scripts": {
+    "set-wp-content": [
+      "rm -rf wp/wp-content/plugins",
+      "mv -s vendor/yamaotakuro/uni-easy-add-field wp/wp-content/plugins"
+    ],
+    "post-install-cmd": [
+      "composer set-wp-content"
+    ]
   }
 }
