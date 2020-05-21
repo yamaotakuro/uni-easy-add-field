@@ -1,6 +1,9 @@
 {
   "name": "yamaotakuro/uni-easy-add-field",
   "type": "wordpress-plugin",
+  "description": "WP-plugin",
+  "homepage": "https://github.com/yamaotakuro/uni-easy-add-field",
+  "license": "MIT",
   "authors": [
     {
       "name": "Takuro Yamao",
@@ -9,22 +12,21 @@
       "role": "Developer"
     }
   ],
-  "repositories":[
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
-      "type": "composer",
-      "url": "https://wp-languages.github.io"
-    }
-  ],
   "require": {
     "php": ">=5.6.0"
   },
   "autoload": {
     "psr-0": {
-      "Acme": "src/"
+      "Monolog": "src"
     }
+  },
+  "scripts": {
+    "set-wp-content": [
+      "rm -rf wp/wp-content/plugins",
+      "mv -s vendor/yamaotakuro/uni-easy-add-field wp/wp-content/plugins"
+    ],
+    "post-install-cmd": [
+      "composer set-wp-content"
+    ]
   }
 }
