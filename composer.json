@@ -1,9 +1,10 @@
 {
   "name": "yamaotakuro/uni-easy-add-field",
-  "type": "wordpress-plugin",
+  "type": "plugin",
   "description": "WP-plugin",
   "homepage": "https://github.com/yamaotakuro/uni-easy-add-field",
   "license": "MIT",
+  "minimum-stability": "stable",
   "authors": [
     {
       "name": "Takuro Yamao",
@@ -15,7 +16,6 @@
   "require": {
     "php": ">=5.6.0"
   },
-  "minimum-stability": "stable",
   "autoload": {
     "psr-0": {
       "Monolog": "src"
